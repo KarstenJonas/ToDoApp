@@ -6,22 +6,24 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
-## Code scaffolding
+## Features
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## CRUD Operations
 
-## Build
+## Task Management (CRUD Operations)
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+The ToDoApp offers comprehensive CRUD (Create, Read, Update, Delete) operations to streamline your task management process. Here's how you can interact with your tasks:
 
-## Running unit tests
+- **Create (Add) Tasks:**
+  Easily add new tasks to your list by typing the task details into the input field and clicking the plus icon. The ToDoApp will instantly incorporate your new task, keeping your list up-to-date.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+- **Read (View) Tasks:**
+  Effortlessly view all your tasks in a user-friendly interface. Each task is displayed with its corresponding details, providing a clear overview of your to-do list.
 
-## Running end-to-end tests
+- **Update (Edit) Tasks:**
+  Modify existing tasks by clicking the edit icon associated with each task. A modal window will appear, allowing you to make changes to the task text. Save your edits by clicking the "Update" button within the modal.
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+- **Delete Tasks:**
+  Remove tasks from your list by clicking on the delete icon next to the respective task. A confirmation prompt will appear, ensuring that you intend to delete the task. Confirm the action to permanently remove the task from your list.
 
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+These intuitive CRUD operations empower you to manage your tasks efficiently and maintain an organized to-do list with the ToDoApp.
