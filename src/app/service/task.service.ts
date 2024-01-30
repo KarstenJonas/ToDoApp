@@ -6,7 +6,7 @@ import { Observable } from 'rxjs';
 @Injectable({
   providedIn: 'root'
 })
-export class CrudService {
+export class TaskService {
 
   serviceURL : string ;
 

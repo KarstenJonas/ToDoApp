@@ -8,8 +8,6 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The appli
 
 ## Features
 
-## CRUD Operations
-
 ## Task Management (CRUD Operations)
 
 The ToDoApp offers comprehensive CRUD (Create, Read, Update, Delete) operations to streamline your task management process. Here's how you can interact with your tasks:
