@@ -1,0 +1,14 @@
+
+<div style="overflow-y: auto; height: 350px;">
+    <!-- Einzelaufgaben, generiert durch *ngFor -->
+    <div class="m-3" *ngFor="let task of taskArr">
+        <div class="p-2 shadow border">
+            <!-- Aufgabenanzeige mit Bearbeitungs- und Löschoptionen -->
+            <div class="input-group row ps-3">
+                <div class="card col-md-10 border-0">{{task.task_name}}</div>
+                <app-update-todo [task]="task"></app-update-todo>
+                <app-delete-todo [task]="task" (taskDeleted)="ngOnInit()"></app-delete-todo>
+            </div>
+        </div>
+    </div>
+</div>
