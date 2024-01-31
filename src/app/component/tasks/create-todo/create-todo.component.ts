@@ -13,19 +13,31 @@ export class CreateTODOComponent {
   taskArr : Task[] = [];
 
   addTaskValue : string = '';
+  emptyInput: boolean = false;
 
   constructor(private taskService : TaskService) { }
 
   createTask() {
-    if (this.addTaskValue.trim() !== '') {
+    if (!this.isEmpty(this.addTaskValue)) {
+      this.emptyInput = false;
       this.taskObj.task_name = this.addTaskValue;
       this.taskService.addTask(this.taskObj).subscribe({
         next: () => this.loadTasks(),
         error: (err) => alert(err)
       });
     } else {
-      alert('Empty input. Please enter a task.');
+      this.emptyInput = true;
     }
+  }
+
+  isEmpty(value: string | Record<string, any> | null | undefined): boolean {
+    if (value == null) {
+      return true;
+    }
+    if (typeof value === 'string') {
+      return value.trim() === '';
+    }
+    return false;
   }
 
   loadTasks() {

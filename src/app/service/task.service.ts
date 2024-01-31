@@ -2,6 +2,7 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Task } from '../model/task';
 import { Observable } from 'rxjs';
+import { environment } from '../../environments/environment.dev'; 
 
 @Injectable({
   providedIn: 'root'
@@ -11,7 +12,7 @@ export class TaskService {
   serviceURL : string ;
 
   constructor(private http : HttpClient) { 
-    this.serviceURL = "http://localhost:3000/tasks"
+    this.serviceURL = environment.apiUrl;
   }
 
   addTask(task : Task) : Observable<Task> {
